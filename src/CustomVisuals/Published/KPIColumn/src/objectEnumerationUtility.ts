@@ -10,14 +10,15 @@ module powerbi.extensibility.visual {
      */
     export function getValue<T>(objects: DataViewObjects, objectName: string, propertyName: string, defaultValue: T ): T {
         if (objects) {
-            let object = objects[objectName];
+            const object: DataViewObject = objects[objectName];
             if (object) {
-                let property: T = <T>object[propertyName];
+                const property: T = <T>object[propertyName];
                 if (property !== undefined) {
                     return property;
                 }
             }
         }
+
         return defaultValue;
     }
 
@@ -31,21 +32,23 @@ module powerbi.extensibility.visual {
      * @param {string} propertyName             - Name of desired property.
      * @param {T} defaultValue                  - Default value of desired property.
      */
-    export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, index: number, objectName: string, propertyName: string, defaultValue: T): T {
-        let categoryObjects = category.objects;
+    export function getCategoricalObjectValue<T>(category: DataViewCategoryColumn, index: number,
+                                                 objectName: string, propertyName: string, defaultValue: T): T {
+        const categoryObjects: DataViewObjects[] = category.objects;
 
         if (categoryObjects) {
-            let categoryObject: DataViewObject = categoryObjects[index];
+            const categoryObject: DataViewObject = categoryObjects[index];
             if (categoryObject) {
-                let object = categoryObject[objectName];
+                const object: DataViewPropertyValue = categoryObject[objectName];
                 if (object) {
-                    let property: T = <T>object[propertyName];
+                    const property: T = <T>object[propertyName];
                     if (property !== undefined) {
                         return property;
                     }
                 }
             }
         }
+
         return defaultValue;
     }
 }
