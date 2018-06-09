@@ -1,0 +1,44 @@
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG {
+  
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG .overflowingText {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG p em {
+  background: yellow;
+  padding: 5px;
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG .categoryLabelContainer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG #textToDisplay {
+  font-size: 20px;
+  color: #000000;
+  height: 100%;
+  width: 1250px;
+  font-family: 'Segoe UI';
+  text-align: center;
+  top: 0px;
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG .labelValue {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG .measureLabel,
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG .measureLabelDest {
+  position: absolute;
+}
+.visual-saltPepperByMAQSoftware726F8878F79F4EF39D5005F1D06A8F1F_DEBUG .conversionMsgContainer {
+  position: absolute;
+  overflow: hidden;
+}
