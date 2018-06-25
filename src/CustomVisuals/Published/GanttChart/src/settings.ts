@@ -132,8 +132,13 @@ module powerbi.extensibility.visual {
         displayRatio: IDisplayRatioSettings;
         categoryCoumnsWidth: ICategoryColumnsWidthSettings;
         sortAttributes: IsortAttributesSettings;
+        persistExpandCollapseSettings: PersistExpandCollapseSettings;
     }
 
+    // tslint:disable-next-line:max-classes-per-file
+    export class PersistExpandCollapseSettings {
+        public expandCollapseState: string = '{}';
+    }
     export class GanttSettings {
         // tslint:disable-next-line:typedef
         public static get Default() {
@@ -159,7 +164,9 @@ module powerbi.extensibility.visual {
                 taskGridlines: this.parseTaskGridLinesSettings(objects, colors),
                 displayRatio: this.parseDisplayRatioSettings(objects),
                 categoryCoumnsWidth: this.parseCategoryColumnsWidthSettings(objects),
-                sortAttributes: this.parsesortAttributesSettings(objects)
+                sortAttributes: this.parsesortAttributesSettings(objects),
+                persistExpandCollapseSettings : new PersistExpandCollapseSettings()
+
             };
         }
 
@@ -349,7 +356,7 @@ module powerbi.extensibility.visual {
 
         private static barColor: IBarColor = {
             defaultColor: '#5F6B6D',
-            showall: false,
+            showall: true,
             fillColor: '#5F6B6D'
         };
 

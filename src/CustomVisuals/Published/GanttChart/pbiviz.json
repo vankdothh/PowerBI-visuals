@@ -4,7 +4,7 @@
     "displayName": "Gantt Chart By MAQ Software",
     "guid": "GanttChartByMAQSoftware1448688115701",
     "visualClassName": "Gantt",
-    "version": "3.1.1",
+    "version": "3.3.1",
     "description": "A Gantt Chart with added grid, having the capability to provide additional details of task or schedule along with KPIs",
     "supportUrl": "https://github.com/maqsoftware/PowerBI-visuals/issues",
     "gitHubUrl": "https://github.com/maqsoftware/PowerBI-visuals"

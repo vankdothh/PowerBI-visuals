@@ -100,6 +100,10 @@ module powerbi.extensibility.visual {
             sortLevel: <DataViewObjectPropertyIdentifier>{ objectName: 'sortAttributes', propertyName: 'sortLevel' },
             prevSortedColumn: <DataViewObjectPropertyIdentifier>{ objectName: 'sortAttributes', propertyName: 'prevSortedColumn' }
 
+        },
+        persistExpandCollapseState: {
+            // tslint:disable-next-line:max-line-length
+            expandCollapseState: <DataViewObjectPropertyIdentifier>{objectName: 'persistExpandCollapseState', propertyName: 'expandCollapseState'}
         }
     };
 }

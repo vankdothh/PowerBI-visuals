@@ -34,8 +34,13 @@
  .gantt-body {
      position: fixed;
      overflow: hidden;
+     top: 20px;
  }
- 
+
+ .interactive-legend{
+    height: 10px;
+}
+
  .gantt {
      position: absolute;
  
@@ -64,7 +69,7 @@
  
  .gantt_chart-line {
      stroke-width: 2px;
-     stroke-dasharray: 3, 3;
+     stroke-dasharray: 3px,3px;
      stroke: #000;
  }
  
@@ -219,7 +224,7 @@
      width: 11px;
      height: 11px;
      z-index: 15;
-     transform: rotate(-135);
+     transform: rotate(-135deg);
      -webkit-transform: rotate(-135deg);
      -moz-transform: rotate(-135deg);
      -o-transform: rotate(-135deg);
@@ -232,7 +237,7 @@
  
  .gantt_legendIndicatorTitlePanel {
      position: absolute;
-     height: 25;
+     height: 25px;
  }
  
  .gantt_kpiIndicatorPanel, .gantt_milestoneIndicatorPanel {
@@ -284,3 +289,46 @@
  .gantt_resizer{
      cursor: col-resize;
  }
+
+ .expand-link:hover .icon-expand,
+.expand-link:active .icon-expand{
+  display: none;
+}
+.expand-link:hover .icon-contract,
+.expand-link:active .icon-contract{
+  display: block;
+}
+
+.circle { 
+    width: 17px;
+    height: 17px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    border-radius: 12px;
+    position: absolute;
+    display: inline-block;
+}
+
+.rectangle {    
+    width: 24px;
+    height: 16px;
+    position: absolute;
+    display: inline-block;
+}
+
+.textValue {
+    position: absolute;
+    display: inline-block;
+}
+
+.border{
+    width: 1px;
+    height:  24px;
+    position:  absolute;
+    background-color:rgb(204, 204, 204);
+    display:  inline-block;
+}
+
+.legend{
+    cursor: auto;
+}
